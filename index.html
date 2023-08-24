@@ -7,15 +7,443 @@
       <meta name="author" content="Joseph Syverson">
       <meta name="description" content="HTML, CSS and vanilla JS specimens">
       <title>Specimina</title>
-      <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+      <link rel="icon" href="favicon.svg" type="image/svg">
       <link rel="stylesheet" href="style.css">
-      <script src="script.js" defer></script>
+      <!-- <script src="script.js" defer></script> -->
   </head>
   
   <body>
-    <header></header>
-    <main>
-      <p>Github has a nice code editor.</p>
-    </main>
-    <footer></footer>
+    <!-- Can this be removed and the class appended to the body? -->
+    <div class="grid">
+      <section class="banner grid-item strong">
+        <ul class="banner__ul">
+          <li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li>
+        </ul>
+        <ul class="banner__ul" aria-hidden="true">
+          <li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li>
+        </ul>
+      </section>
+
+      <header class="header grid-item border-right">
+        <h1 class="subheader__h1 center" title="Frontend Web Specimens">Specimens</h1>
+        <p class="subheader__p subheader__p_s1 center"><abbr title="HyperText Markup Language">HTML</abbr></p>
+        <p class="subheader__p subheader__p_s2 center"><abbr title="Cascading Style Sheets">CSS</abbr></p>
+        <p class="subheader__p subheader__p_s3 center"><abbr title="JavaScript">JS</abbr></p>
+      </header>
+
+      <div class="swatch swatch__div__mobile">
+        <div class="swatch__div swatch__div__magenta">&nbsp;</div>
+        <div class="swatch__div swatch__div__black">&nbsp;</div>
+        <div class="swatch__div swatch__div__dk-grey">&nbsp;</div>
+        <div class="swatch__div swatch__div__lt-grey">&nbsp;</div>
+        <div class="swatch__div swatch__div__white">&nbsp;</div>
+      </div>
+      
+      <nav class="nav">
+        <section class="nav__section__desktop">
+          <section class="nav__section__menu grid-item">
+            <h2 class="nav__summary stretch">Menu</h2>
+            <ol class="columnlist em">
+              <li><a href="index.html#image">Image</a></li>
+              <li><a href="index.html#text">Text</a></li>
+              <li><a href="index.html#table">Table</a></li>
+              <li><a href="index.html#form">Form</a></li>
+            </ol>
+          </section>
+          <section class="nav__section__appendix grid-item">
+            <h2 class="nav__summary stretch">Appendix</h2>
+            <ol class="columnlist em">
+              <li><a href="index.html#table2">Table: Styled as Grid</a></li>
+            </ol>
+          </section>
+          <section class="swatch__div__desktop">
+            <div class="swatch swatch__div">
+              <div class="swatch__div swatch__div__magenta">&nbsp;</div>
+              <div class="swatch__div swatch__div__white">&nbsp;</div>
+              <div class="swatch__div swatch__div__lt-grey">&nbsp;</div>
+              <div class="swatch__div swatch__div__dk-grey">&nbsp;</div>
+              <div class="swatch__div swatch__div__black">&nbsp;</div>
+            </div>
+          </section>
+        </section>
+
+        <section class="nav__section__mobile grid-item">
+          <details>
+            <summary class="nav__summary stretch"><h2>Menu</h2></summary>
+              <div class="nav__div__links bisect">            
+                <ol class="columnlist em">
+                  <li><a href="index.html#image">Image</a></li>
+                  <li><a href="index.html#text">Text</a></li>
+                  <li><a href="index.html#table">Table</a></li>
+                  <li><a href="index.html#form">Form</a></li>
+                </ol>
+                <br/>
+                <h2 class="nav__summary stretch">Appendix</h2>
+                <ol class="columnlist em">
+                  <li><a href="index.html#table2">Table: Styled as Grid</a></li>
+                </ol>
+          </details>
+        </section>
+      </nav>
+
+      <main class="main grid-item border-right">
+        <h2 class="offscreen">Exhibits</h2>
+
+        <ol class="columnlist">
+          <li class="lifted" id="image">
+            <h3>Figure, Picture & Image</h3>
+            <figure class="image__figure">
+
+              <picture title="Image Sample">
+                <source media="(max-width: 849px)" srcset="img/berniniGianLorenzo_theEcstasyOfSaintTeresa-1645to1652_320x328-px.jpg" type="image/jpg">
+                <source media="(min-width: 850px)" srcset="img/berniniGianLorenzo_theEcstasyOfSaintTeresa-1645to1652_860x826-px.jpg" type="image/jpg">
+                <img title="The Ecstacy of St Therese" alt="Saint Therese in Ecstacy" width="860px" height="826px" />
+              </picture>
+
+              <figcaption class="image__caption">Saint Therese in Ecstacy</figcaption>
+              <div class="Embrace-of-God" title="Vertical magenta line striking Therese Avila to illustrate the Embrace of God"></div>
+            </figure>
+          </li>
+          <br/>
+          <hr class="lifted"/>
+
+          <li class="lifted" id="text">
+            <h3>Article, Section, Paragraph & Aside</h3>
+            <article title="Text Sample">
+              <section title="Section Sample 1">
+                <p class="text__p text__p__primary" title="Paragraph Sample 1">Lorem ipsum <em>dolor</em> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <strong>dolore magna</strong> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <em>dolore</em> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </section>
+
+              <section title="Section Sample 2">
+                <p class="text__p text__p__primary" title="Paragraph Sample 2">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium <em>doloremque</em> laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae <span class="small-caps">vitae dicta sunt</span>, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur <strong>magni dolores</strong> eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui <em>dolorem</em> ipsum, quia <em>dolor</em> sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et <strong>dolore magnam</strong> aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum[d] exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? [D]Quis autem vel eum i[r]ure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui <em>dolorem</em> eum fugiat, quo voluptas nulla pariatur?
+                </p>
+                
+                <aside class="text__aside" title="Aside Sample">Sphinx of black quartz, judge my vow. Sphinx of black quartz, judge my vow. Sphinx of black quartz, judge my vow. Sphinx of black quartz, judge my vow. Sphinx of black quartz, judge my vow. Sphinx of black quartz...</aside>
+
+                <p class="text__p text__p__secondary" title="Paragraph Sample 3">At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos <em>dolores</em> et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et <em>dolorum</em> fuga. Et harum quidem reru[d]um facilis est e[r]t expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis <em>dolor</em> repellend[a]us. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis <em>doloribus</em> asperiores repellat.</p>
+              </section>  
+            </article>
+          </li>
+          <br/>
+          <hr class="lifted"/>
+
+          <li class="lifted" id="table">
+            <h3>Figure & Table</h3>
+            <figure>
+              <table title="Table Sample">
+                <caption class="small-caps">Caption</caption>
+
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th class="center" colspan="2">Column Header</th>
+                  </tr>        
+                </thead>
+                
+                <tbody>
+                  <tr>
+                    <th class="center magenta" colspan="3">Row Group</th>
+                  </tr>
+                  <tr scope="row">
+                    <th rowspan="2">Row Header</th>
+                    <td>table data</td>
+                    <td>table data</td>
+                  </tr>
+                  <tr>
+                    <td>table data</td>
+                    <td>table data</td>
+                  </tr>
+
+                  <tr>
+                    <th class="center magenta" colspan="3">Row Group</th>
+                  </tr>
+                  <tr scope="row">
+                    <th rowspan="3">Row Header</th>
+                    <td>table data</td>
+                    <td>table data</td>
+                  </tr>
+                  <tr>
+                    <td>table data</td>
+                    <td>table data</td>
+                  </tr>
+                  <tr>
+                    <td>table data</td>
+                    <td>table data</td>
+                  </tr>
+
+                </tbody>
+                
+                <tfoot>
+                  <tr>
+                    <td colspan="3"><em>A traditionally styled table</em></td>
+                  </tr>
+                </tfoot>
+
+              </table>
+              
+              <figcaption class="offscreen"><h4>A Traditionally Styled Table</h4></figcaption>
+            </figure>
+          </li>
+          <br/>
+          <hr class="lifted"/>
+        
+          <li class="lifted" id="form">
+            <h3>Form & Fieldset</h3>
+            <form target="_blank" title="Form Sample" action="https://httpbin.org/post" method="POST">
+              <fieldset title="Personal Info">
+                <legend class="em">Personal Info</legend>
+                
+                <p>
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" placeholder="First Last" autocomplete="on" required />
+                </p>
+
+                <p>
+                  <label for="tel">Phone:</label>
+                  <input type="tel" name="tel" pattern="[0-9]{10}" placeholder="5555555555" required />
+                </p>
+
+              </fieldset>
+
+              <fieldset title="Situation">
+                <legend class="em">Situation</legend>
+
+                <p>                
+                  <label for="century">Century:</label>
+                  <input type="number" name="century" min="2000" max="2900" step="100" value="2900"/>
+                </p>
+
+                <p>                
+                  <label for="location">Location:</label>
+                  <select name="location">
+                    <optgroup label="Limbo">
+                      <option value="africa">Africa</option>
+                      <option value="antarctica">Antarctica</option>
+                      <option value="eurasia">Eurasia</option>
+                      <option value="americas">Americas</option>
+                      <option value="australia">Australia</option>
+                      <option value="limbotic">Other</option>
+                    </optgroup>
+                    <optgroup label="Purgatory">
+                      <option value="luna">Luna</option>
+                      <option value="mars">Mars</option>
+                      <option value="titan">Titan</option>
+                      <option value="terrestrial satellite">[synthetic terrestrial satellite]</option>
+                      <option value="purgatorial">Other</option>
+                    </optgroup>
+                    <option value="hell">Hell</option>
+                    <option value="paradise">Paradise</option>
+                    <option value="other">Other</option>
+                  </select>
+                </p>
+              </fieldset>
+
+              <fieldset class="bisect" title="Ideology">
+                <legend class="em">Ideology</legend>
+
+                <section> 
+                  <p>                
+                    <input type="radio" name="politics" value="authoritarian" required>
+                    <label for="authoritarian">Authoritarian</label>
+                  </p>                
+                  <p>                
+                    <input type="radio" name="economics" value="social" required>
+                    <label for="social">Socialist</label>
+                  </p>                
+                  <p>                
+                    <input type="radio" name="epistemology" value="postivist" required>
+                    <label for="postivist">Postivist</label>
+                  </p>
+                </section>
+
+                <section>
+                  <p>
+                    <input type="radio" name="politics" value="libertarian" required>
+                    <label for="libertarian">Libertarian</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="economics" value="private" required>
+                    <label for="private">Privatist</label>                  
+                  </p>
+                  <p>
+                    <input type="radio" name="epistemology" value="skeptical" required>
+                    <label for="skeptical">Skeptical</label>
+                  </p>
+                <section>
+              </fieldset>
+
+              <fieldset title="Valid Schools">
+                <legend class="em">Valid Schools</legend>
+
+                  <ul class="bisect">
+                    <li>
+                      <span class="nowrap">                  
+                        <input type="checkbox"  name="schools" value="neoplatonic"/>
+                        <label for="neoplatonic">Neoplatonic</label>
+                      </span>
+                    </li>
+                    <li>
+                    <span class="nowrap">                  
+                      <input type="checkbox" name="schools" value="thomist">
+                      <label for="thomist">Thomist</label>
+                    </span>
+                  </li>
+                    <li>
+                    <span class="nowrap">                  
+                      <input type="checkbox" name="schools" value="empircist">
+                      <label for="empircist">Empiricist</label>
+                    </span>
+                  </li>
+                    <li>
+                    <span class="nowrap">                  
+                      <input type="checkbox" name="schools" value="hegelian">
+                      <label for="hegelian">Hegelian</label>
+                    </span>
+                  </li>
+                    <li>
+                    <span class="nowrap">                  
+                      <input type="checkbox" name="schools" value="marxist">
+                      <label for="marxist">Marxist</label>
+                    </span>
+                  </li>
+                    <li>
+                    <span class="nowrap">                  
+                      <input type="checkbox" name="schools" value="existential">
+                      <label for="existential">Existential</label>
+                    </span>
+                  </li>
+                    <li>
+                    <span class="nowrap">                  
+                      <input type="checkbox" name="schools" value="feminist">
+                      <label for="feminist">Feminist</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="nowrap">                  
+                      <input type="checkbox" name="schools" value="other">
+                      <label for="other">Other</label>
+                    </span>
+                  </li>
+                  </ul>           
+              </fieldset>
+
+              <fieldset title="Comment">
+                <legend class="em">Comment</legend>
+                <label class="offscreen" for="comment">Comment:</label>
+                <textarea class="stretch" name="comment" rows="10" placeholder="If you specified Other for an of the fields, please make clear what the Other is. Also, feel free to send your critique about the quality and extent of this survey."></textarea>
+              </fieldset>
+              
+              <fieldset title="Submit">
+                <legend class="em">Submit</legend>
+                <p>                
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" placeholder="I don't recommend you enter your real email here" required />
+                </p>
+
+                <p>
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" placeholder="I don't recommend you enter your real password here" required />
+                </p>
+              </fieldset>
+
+              <!-- <aside>The free service that is the target of this form can take a long time and will open in a new window.</aside> -->
+              <section class="form__button__submit">
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+              </section>
+            </form>
+          </li>
+        </ol>
+        
+        <br/>
+        <hr class="lifted"/>
+        <ol id="table2" class="columnlist">
+          <h2 class="offscreen">Appendix</h2>
+          <li class="lifted">
+            <h3>Table: Displayed as Grid</h3>
+            <figure class="table">
+              
+              <table class="table-grid" title="Table Sample">
+                <caption class="table-grid-outline table__caption small-caps">Caption</caption>
+
+                <thead class="table-grid">
+                  <tr class="table-grid">
+                    <th class="table-grid-outline table__th__ee">&nbsp;</th>
+                    <th class="table-grid-outline table__th__hc center" colspan="2">Column Header</th>
+                  </tr>        
+                </thead>
+                
+                <tbody class="table-grid">
+                  <tr class="table-grid">
+                    <th class="table-grid-outline table__th__gr1 center" colspan="3">Row Group</th>
+                  </tr>
+                  <tr class="table-grid" scope="row">
+                    <th class="table-grid-outline table__th__hr1" rowspan="2">Row Header</th>
+                    <td class="table-grid-outline table__td__1">table data</td>
+                    <td class="table-grid-outline table__td__1">table data</td>
+                  </tr>
+                  <tr class="table-grid">
+                    <td class="table-grid-outline table__td__2">table data</td>
+                    <td class="table-grid-outline table__td__2">table data</td>
+                  </tr>
+
+                  <tr class="table-grid">
+                    <th class="table-grid-outline table__th__gr2 center" colspan="3">Row Group</th>
+                  </tr>
+                  <tr class="table-grid" scope="row">
+                    <th class="table-grid-outline table__th__hr2" rowspan="3">Row Header</th>
+                    <td class="table-grid-outline table__td__3">table data</td>
+                    <td class="table-grid-outline table__td__3">table data</td>
+                  </tr>
+                  <tr class="table-grid">
+                    <td class="table-grid-outline table__td__4">table data</td>
+                    <td class="table-grid-outline table__td__4">table data</td>
+                  </tr>
+                  <tr class="table-grid">
+                    <td class="table-grid-outline table__td__5">table data</td>
+                    <td class="table-grid-outline table__td__5">table data</td>
+                  </tr>
+
+                </tbody>
+                
+                <tfoot class="table-grid">
+                  <tr class="table-grid">
+                    <td class="table-grid-outline table__td__ff" colspan="3"><em>A table styled as grid</em></td>
+                  </tr>
+                </tfoot>
+
+              </table>
+              <figcaption class="table-grid-outline table__figcaption offscreen"><h4>A Table Displayed by Grid</h4></figcaption>
+            </figure>
+          </li>
+        </ol>
+              
+
+      </main>
+      <footer class="footer grid-item center">
+        <section class="footer__section__desktop">
+          <ul class="footer__ul">
+            <li><a target="_blank" href="https://linktr.ee/lalegnyc">linktree</a></li>
+            <li><a target="_blank" href="https://github.com/joesyverson/specimina">github</a></li>
+            <li><a href="mailto:contact@la-leg.com">contact@la-leg.com</a></li>
+          </ul>        
+        </section>
+
+        
+        <section class="footer__section__mobile">
+          <details>
+            <summary class="footer__summary strong">Links</summary>
+            <ul class="footer__ul">
+              <li><a target="_blank" href="https://linktr.ee/lalegnyc">linktree</a></li>
+              <li><a target="_blank" href="https://github.com/joesyverson/specimina">github</a></li>
+              <li><a href="mailto:contact@la-leg.com">contact@la-leg.com</a></li>
+            </ul>
+          </details>
+        </section>
+
+      </footer>
+    </div>
+
+  <!-- <br/> -->
   </body>
+</html>
