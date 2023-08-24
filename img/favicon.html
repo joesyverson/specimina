@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Joseph Syverson">
+      <meta name="description" content="HTML, CSS and vanilla JS specimens">
+      <title>Specimina</title>
+
+      <style type="text/css">
+        /* titling cursive */
+        @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+        /* subtitling  gaulic */
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+        /* headers roman caps */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+        /* text roman */
+        @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+        /* text italic */
+        @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap');
+        /* text bold */
+        @import url('https://fonts.googleapis.com/css2?family=Asul:wght@700&display=swap');
+
+
+        /* RESETS */
+
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        input,
+        button,
+        textarea {
+            font: inherit;
+        }
+        
+
+        .grid {
+          height: 100vh;
+          display: grid;
+          grid-template-areas:
+            "S s1"
+            "S s2"
+            "S s3";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .primary-s {
+          grid-area: S;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 60vh;
+          font-family: 'Monsieur La Doulaise', cursive;
+        }
+
+        .secondary-s1 {
+          grid-area: s1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20vh;
+          font-family: 'UnifrakturMaguntia', cursive;
+        }
+
+        .secondary-s2 {
+          grid-area: s2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20vh;
+          font-family: 'Cinzel', serif;
+        }
+
+        .secondary-s3 {
+          grid-area: s3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20vh;
+          font-family: 'Belleza', serif;
+        }
+
+      </style>
+  </head>
+  
+  <body>
+    <div class="grid">
+      <div class="primary-s">S</div>
+      <div class="secondary-s1">s</div>
+      <div class="secondary-s2">S</div>
+      <div class="secondary-s3">s</div>
+    </div>
+
+  </body>
+
+</html>
