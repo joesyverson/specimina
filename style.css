@@ -455,7 +455,16 @@ form, table {
 }
 
 .nav ol li {
+    display: block;
+    width: 100%;
+
     margin-bottom: 0.25em;
+    letter-spacing: 0.075em;
+    letter-spacing: 0.1em;
+}
+
+.nav_details {
+    overflow: auto;
 }
 
 .nav__summary {
@@ -466,7 +475,7 @@ form, table {
 
     column-span: all;
     text-align: center;
-/*    display: block;*/
+    display: block;
     
     padding-top: 0.5em;
     padding-bottom: 0.5em;
