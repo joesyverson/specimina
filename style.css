@@ -63,9 +63,7 @@ input, button, textarea, select {
 /*    --CLR_LMED: hsl(0, 0%, 93%);*/
     --CLR_LMED: hsl(0, 0%, 90%);
     --CLR_DMED: darkgray;
-/*  --CLR_BRD: var(--CLR_DMED);*/
     --CLR_HILITE: magenta;
-    --CLR_LNK_HVR: pink;
     --CLR_SCROLL_HVR: pink;
 
   /* FRAMING */
@@ -163,6 +161,15 @@ input, button, textarea, select {
     margin-bottom: 0.25em;
 }
 
+.linklist li:nth-child(odd) {
+    animation: fade 2s ease-in-out 2s alternate both infinite;
+}
+
+.linklist li:nth-child(even) {
+    animation: fade 2s ease-in-out 1s alternate both infinite;
+}
+
+
 /* GENERAL */
 
 html {
@@ -220,8 +227,11 @@ abbr {
 
 a {
     text-decoration: none;
-/*    color: magenta;*/
     color: var(--CLR_DARK);
+}
+
+details summary {
+    animation: fade 2s ease-in-out 0s alternate both infinite;
 }
 
 details > summary {
@@ -354,6 +364,26 @@ form {
     font-size: 1rem;
 }
 
+/* ANIMATIONS */
+
+@keyframes fade {
+  from {
+    opacity: initial;
+  }
+  to {
+    opacity: 50%;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--banner-gap)));
+  }
+}
+
 /* BLOCKS */
 
 .grid {
@@ -373,6 +403,7 @@ form {
     overflow: hidden;
 }
 
+/* scroll animation depends on this parent class */
 .banner {
     grid-area: B;
     background: var(--CLR_DARK);
@@ -389,6 +420,7 @@ form {
 
     user-select: none;
 }
+
 .banner__ul {
     list-style-type: none;
 
@@ -398,14 +430,6 @@ form {
     min-width: 100%;
     gap: var(--banner-gap);
     animation: scroll 60s linear infinite;
-}
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - var(--banner-gap)));
-  }
 }
 
 .header {
