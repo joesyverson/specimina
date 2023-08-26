@@ -496,7 +496,7 @@ form {
     text-decoration: line-through;
     text-decoration-style: wavy;
     text-decoration-thickness: 0.05em;
-    text-decoration-color: var(--CLR_DARK);
+    text-decoration-color: var(--CLR_LITE);
 }
 
 .nav {
@@ -834,10 +834,6 @@ form {
         font-size: 70%;
         letter-spacing: 1vw;
         position: static;
-    }
-
-    .subheader__p__s3 {
-        text-decoration-color: var(--CLR_HILITE);
     }
 
     .nav {
