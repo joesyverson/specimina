@@ -59,7 +59,6 @@ input, button, textarea, select {
 
     /* COLOR */
     --CLR_DARK: #333;
-    --CLR_BODY: magenta;
     --CLR_LITE: whitesmoke;
 /*    --CLR_LMED: hsl(0, 0%, 93%);*/
     --CLR_LMED: hsl(0, 0%, 90%);
@@ -109,12 +108,12 @@ input, button, textarea, select {
     display: block;
 }
 
-.strong {
-/*    font-size: var(--FNT_SIZE_HEAD_SMALL);*/
+.bold {
     font-weight: var(--FNT_WT_TEXT_BOLD);
+    font-family: var(--FNT_FAM_TEXT_BOLD);
 }
 
-.em {
+.ital {
     font-family: var(--FNT_FAM_TEXT_IT);
     font-weight: var(--FNT_WT_TEXT_IT);
     font-style: var(--FNT_STY_TEXT_IT);
@@ -126,6 +125,7 @@ input, button, textarea, select {
     text-transform: uppercase;
     letter-spacing: 0.5vw;
 }
+
 .small-caps {
     text-transform: uppercase;
     font-size: 75%;
@@ -159,34 +159,34 @@ input, button, textarea, select {
 /* GENERAL */
 
 html {
-  scroll-behavior: smooth;
-  font-family: var(--FNT_FAM_TEXT_VERT);
+    scroll-behavior: smooth;
+    font-family: var(--FNT_FAM_TEXT_VERT);
 }
 
 body {
-  color: var(--CLR_DARK);   
-  background: var(--CLR_BODY);
-  font-size: var(--FNT_SIZE_TEXT);
+    background: var(--CLR_HILITE);
+
+    color: var(--CLR_DARK);   
+    font-size: var(--FNT_SIZE_TEXT);
 }
 
 h2, h3 {
-  font-family: var(--FNT_FAM_HEAD);
-  font-weight: var(--FNT_WT_HEAD);
+    font-family: var(--FNT_FAM_HEAD);
+    font-weight: var(--FNT_WT_HEAD);
+    
+    padding-top: .75em;
+    padding-bottom: .75em;
 }
 
 h2 {
-    font-size:1em;
-/*    padding-top: .25vh;*/
+    font-size: 1em;
 }
 
 h3 {
     font-size:  0.75em;
     letter-spacing: 0.2em;
+    
     text-align: center;
-
-    padding-top: 0.25em;
-    padding-bottom: 0.5em;
-/*    margin-bottom: 1.25vh;*/
 }
 
 h4 {
@@ -438,7 +438,6 @@ form {
     font-family: var(--FNT_FAM_SUBTITLE);
     font-size: 0.75em;
     letter-spacing: 1vw;
-    text-transform: lowercase;
 
     display: flex;
     justify-content: center;
@@ -780,7 +779,6 @@ form {
 
     h2 {
         font-size: 1rem;
-        padding-top: .75vh;
     }
 
     h3 {
@@ -789,7 +787,7 @@ form {
 
     ::-webkit-scrollbar {
         /* note: 1fr of grid */
-        width: calc(2.5vw + 2px);
+        width: calc(2.5vw + var(--GAP));
     }
 
     .grid {    
@@ -826,7 +824,6 @@ form {
         font-family: var(--FNT_FAM_SUBTITLE);
         font-size: 70%;
         letter-spacing: 1vw;
-        text-transform: lowercase;
         background: transparent;
         position: static;
     }
@@ -910,18 +907,13 @@ form {
 
     h2 {
         font-size: 2.5vh;
-        padding-top: .75vh;
     }
 
     h3 {
         font-size: 2vh;
         letter-spacing: 0.2em;
         text-align: center;
-        padding-top: 0.25em;
-        padding-bottom: 1.25vh;
-        margin-bottom: 1.25vh;
     }
-
 
     .banner {
         font-size: 1em;
@@ -948,7 +940,6 @@ form {
 
     h2 {
         font-size: 2.5vh;
-        padding-top: .75vh;
     }
 
 
