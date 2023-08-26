@@ -420,22 +420,25 @@ form {
     font-family: var(--FNT_FAM_TITLE);
     font-weight: var(--FNT_WT_SUBTITLE);
     font-style: var(--FNT_STY_TEXT_IT);
-    font-size: 14vh;
+    font-size: 56vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: relative;
-    bottom: 6vh;
-    right: 6.5vw;
+    bottom: 49.5vh;
 
     padding: 0;
+
+    text-transform: lowercase;
 }
 
 .subheader__p {
     color: var(--CLR_HILITE);
     opacity: 40%;
+    background: transparent;
+
     font-family: var(--FNT_FAM_SUBTITLE);
     font-size: 0.75em;
     letter-spacing: 1vw;
@@ -465,17 +468,7 @@ form {
 }
 
 
-.subheader__p__s1 {
-    grid-area: S1;
-    padding: 0;
-}
-.subheader__p__s2 {
-    grid-area: S2;
-    padding: 0;
-}
 .subheader__p__s3 {
-    padding: 0;
-    grid-area: S3;
     text-decoration: line-through;
     text-decoration-style: wavy;
     text-decoration-thickness: 0.05em;
@@ -762,12 +755,6 @@ form {
         font-size: 68%;
     }
 
-    .subheader__h1 {
-        font-size: 12vh;
-        bottom: 4vh;
-        right: 9vw;
-    }
-
     .main {
         padding-left: 0.25em;
         padding-right: 0.25em;
@@ -789,7 +776,7 @@ form {
     }
 
     ::-webkit-scrollbar {
-        /* note: 1fr of grid */
+        /* note: 1fr of grid + grid gap */
         width: calc(2.5vw + var(--GAP));
     }
 
@@ -809,15 +796,10 @@ form {
         font-size: 50%;
     }
 
-    .header {
-        grid-area: H;
-    }
-
     .subheader__h1 {
-        grid-area: H1;
-        font-size: 20vh;
-        bottom: 8vh;
-        right: -1vw;
+        font-size: 75vh;
+
+        bottom: 60vh;
     }
 
     .subheader__p {
@@ -827,7 +809,6 @@ form {
         font-family: var(--FNT_FAM_SUBTITLE);
         font-size: 70%;
         letter-spacing: 1vw;
-        background: transparent;
         position: static;
     }
 
@@ -885,12 +866,6 @@ form {
         font-size: var(--FNT_SIZE_TEXT);
     }
 
-    .subheader__h1 {
-        font-size: 20vh;
-        bottom: 12vh;
-        right: 2.5;
-    }
-
     .subheader__div {
         right: 2vw;
         font-size: 120%;
@@ -924,6 +899,12 @@ form {
 
     .banner {
         font-size: 1em;
+    }
+
+    .subheader__h1 {
+        font-size: 100vh;
+        bottom: 87vh;
+        left: 14vw;
     }
 
     .nav ol {
@@ -993,57 +974,27 @@ form {
         font-size: 70%;
     }
 
-    .header {
-        display: grid;
-        grid-template-areas:
-            "H1 S1"
-            "H1 S2"
-            "H1 S3";
-        grid-template-columns: 9fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        position: static;
-        overflow: visible;
+    .subheader__h1 {
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+        text-transform: none;
+        font-size: 240vh;
+
+        padding: 0;
+        left: -212vh;
+        bottom: 25vh;
     }
 
     .subheader__div {
-        display: contents;
-    }
-
-
-    .subheader__h1 {
-        grid-area: H1;
-        writing-mode: vertical-lr;
-        transform: rotate(-180deg);
-        font-size: clamp(5vh, 25vh, 25vh);
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background: transparent;
-
-        margin-right: -3vw;
-        padding: 0;
-        position: static;
-
+        padding-left: 1em;
     }
 
 
     .subheader__p {
         font-size: clamp(0.5em, 1.5em, 2em);
         justify-content: right;
-        padding-right: 2vw;
-        opacity: 20%;
-    }
+        opacity: 50%;
 
-    .subheader__p_s1 {
-        grid-area: S1;
-    }
-    .subheader__p_s2 {
-        grid-area: S2;
-    }
-    .subheader__p_s3 {
-        grid-area: S3;
     }
 
     .nav {
