@@ -7,7 +7,7 @@
       <meta name="author" content="Joseph Syverson">
       <meta name="description" content="HTML, CSS and vanilla JS specimens">
       <title>Specimina</title>
-      <link rel="icon" href="favicon.svg" type="image/svg">
+      <link rel="icon" href="img/favicon.svg" type="image/svg">
       <link rel="stylesheet" href="style.css">
       <!-- <script src="script.js" defer></script> -->
   </head>
@@ -15,7 +15,7 @@
   <body>
     <!-- Can this be removed and the class appended to the body? -->
     <div class="grid">
-      <section class="banner grid-item strong">
+      <section class="banner lt-grey bold">
         <ul class="banner__ul">
           <li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li><li>SALE</li>
         </ul>
@@ -24,11 +24,15 @@
         </ul>
       </section>
 
-      <header class="header grid-item border-right">
-        <h1 class="subheader__h1 center" title="Frontend Web Specimens">Specimens</h1>
-        <p class="subheader__p subheader__p_s1 center"><abbr title="HyperText Markup Language">HTML</abbr></p>
-        <p class="subheader__p subheader__p_s2 center"><abbr title="Cascading Style Sheets">CSS</abbr></p>
-        <p class="subheader__p subheader__p_s3 center"><abbr title="JavaScript">JS</abbr></p>
+      <header class="header lt-grey">
+        <a href="index.html#top">
+          <h1 class="subheader__h1 lt-grey" title="Frontend Web Specimens">Specimens</h1>
+          <div class="subheader__div">
+            <p class="subheader__p subheader__p__s1 lowercase lt-grey center"><abbr title="HyperText Markup Language">HTML</abbr></p>
+            <p class="subheader__p subheader__p__s2 lowercase lt-grey center"><abbr title="Cascading Style Sheets">CSS</abbr></p>
+            <p class="subheader__p subheader__p__s3 lowercase lt-grey center"><abbr title="JavaScript">JS</abbr></p>
+          </div>
+        </a>
       </header>
 
       <div class="swatch swatch__div__mobile">
@@ -41,18 +45,18 @@
       
       <nav class="nav">
         <section class="nav__section__desktop">
-          <section class="nav__section__menu grid-item">
-            <h2 class="nav__summary stretch">Menu</h2>
-            <ol class="columnlist em">
+          <section class="nav__section__menu lt-grey">
+            <h2 class="uppercase nav__summary stretch">Menu</h2>
+            <ol class="columnlist linklist ital">
               <li><a href="index.html#image">Image</a></li>
               <li><a href="index.html#text">Text</a></li>
               <li><a href="index.html#table">Table</a></li>
               <li><a href="index.html#form">Form</a></li>
             </ol>
           </section>
-          <section class="nav__section__appendix grid-item">
-            <h2 class="nav__summary stretch">Appendix</h2>
-            <ol class="columnlist em">
+          <section class="nav__section__appendix lt-grey">
+            <h2 class="uppercase nav__summary stretch">Appendix</h2>
+            <ol class="columnlist linklist ital">
               <li><a href="index.html#table2">Table: Styled as Grid</a></li>
             </ol>
           </section>
@@ -67,31 +71,31 @@
           </section>
         </section>
 
-        <section class="nav__section__mobile grid-item">
+        <section class="nav__section__mobile lt-grey">
           <details class="nav_details lifted">
-            <summary class="nav__summary stretch"><h2>Menu</h2></summary>
+            <summary class="nav__summary stretch"><h2 class="uppercase">Menu</h2></summary>
               <div class="nav__div__links">            
-                <ol class="columnlist center em">
+                <ol class="columnlist linklist center ital">
                   <li><a href="index.html#image">Image</a></li>
                   <li><a href="index.html#text">Text</a></li>
                   <li><a href="index.html#table">Table</a></li>
                   <li><a href="index.html#form">Form</a></li>
                 </ol>
                 <br/>
-                <h2 class="nav__summary stretch">Appendix</h2>
-                <ol class="columnlist center em">
+                <h2 class="uppercase nav__summary stretch">Appendix</h2>
+                <ol class="columnlist linklist center ital">
                   <li><a href="index.html#table2">Table: Styled as Grid</a></li>
                 </ol>
           </details>
         </section>
       </nav>
 
-      <main class="main grid-item border-right">
-        <h2 class="offscreen">Exhibits</h2>
+      <main class="main lt-grey border-right">
+        <h2 class="uppercase offscreen">Exhibits</h2>
 
-        <ol class="columnlist">
+        <ol id="top" class="columnlist">
           <li class="lifted" id="image">
-            <h3>Figure, Picture & Image</h3>
+            <h3 class="uppercase">Figure, Picture & Image</h3>
             <figure class="image__figure">
 
               <picture title="Image Sample">
@@ -108,7 +112,7 @@
           <hr class="lifted"/>
 
           <li class="lifted" id="text">
-            <h3>Article, Section, Paragraph & Aside</h3>
+            <h3 class="uppercase">Article, Section, Paragraph & Aside</h3>
             <article title="Text Sample">
               <section title="Section Sample 1">
                 <p class="text__p text__p__primary" title="Paragraph Sample 1">Lorem ipsum <em>dolor</em> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <strong>dolore magna</strong> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <em>dolore</em> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -128,7 +132,7 @@
           <hr class="lifted"/>
 
           <li class="lifted" id="table">
-            <h3>Figure & Table</h3>
+            <h3 class="uppercase">Figure & Table</h3>
             <figure>
               <table title="Table Sample">
                 <caption class="small-caps">Caption</caption>
@@ -188,10 +192,10 @@
           <hr class="lifted"/>
         
           <li class="lifted" id="form">
-            <h3>Form & Fieldset</h3>
+            <h3 class="uppercase">Form & Fieldset</h3>
             <form target="_blank" title="Form Sample" action="https://httpbin.org/post" method="POST">
               <fieldset title="Personal Info">
-                <legend class="em">Personal Info</legend>
+                <legend class="ital">Personal Info</legend>
                 
                 <p>
                   <label for="name">Name:</label>
@@ -206,7 +210,7 @@
               </fieldset>
 
               <fieldset title="Situation">
-                <legend class="em">Situation</legend>
+                <legend class="ital">Situation</legend>
 
                 <p>                
                   <label for="century">Century:</label>
@@ -239,7 +243,7 @@
               </fieldset>
 
               <fieldset class="bisect" title="Ideology">
-                <legend class="em">Ideology</legend>
+                <legend class="ital">Ideology</legend>
 
                 <section> 
                   <p>                
@@ -273,7 +277,7 @@
               </fieldset>
 
               <fieldset title="Valid Schools">
-                <legend class="em">Valid Schools</legend>
+                <legend class="ital">Valid Schools</legend>
 
                   <ul class="bisect">
                     <li>
@@ -328,13 +332,13 @@
               </fieldset>
 
               <fieldset title="Comment">
-                <legend class="em">Comment</legend>
+                <legend class="ital">Comment</legend>
                 <label class="offscreen" for="comment">Comment:</label>
                 <textarea class="stretch" name="comment" rows="10" placeholder="If you specified Other for an of the fields, please make clear what the Other is. Also, feel free to send your critique about the quality and extent of this survey."></textarea>
               </fieldset>
               
               <fieldset title="Submit">
-                <legend class="em">Submit</legend>
+                <legend class="ital">Submit</legend>
                 <p>                
                   <label for="email">Email:</label>
                   <input type="email" name="email" placeholder="I don't recommend you enter your real email here" required />
@@ -358,9 +362,9 @@
         <br/>
         <hr class="lifted"/>
         <ol id="table2" class="columnlist">
-          <h2 class="offscreen">Appendix</h2>
+          <h2 class="uppercase offscreen">Appendix</h2>
           <li class="lifted">
-            <h3>Table: Displayed as Grid</h3>
+            <h3 class="uppercase">Table: Displayed as Grid</h3>
             <figure class="table">
               
               <table class="table-grid" title="Table Sample">
@@ -420,11 +424,13 @@
               
 
       </main>
-      <footer class="footer grid-item center">
+      <footer class="footer lt-grey center">
         <section class="footer__section__desktop">
-          <ul class="footer__ul">
+          <ul class="footer__ul linklist">
             <li><a target="_blank" href="https://linktr.ee/lalegnyc">linktree</a></li>
+
             <li><a target="_blank" href="https://github.com/joesyverson/specimina">github</a></li>
+            
             <li><a href="mailto:contact@la-leg.com">contact@la-leg.com</a></li>
           </ul>        
         </section>
@@ -432,8 +438,8 @@
         
         <section class="footer__section__mobile">
           <details>
-            <summary class="footer__summary strong">Links</summary>
-            <ul class="footer__ul">
+            <summary class="footer__summary uppercase bold">Links</summary>
+            <ul class="footer__ul linklist">
               <li><a target="_blank" href="https://linktr.ee/lalegnyc">linktree</a></li>
               <li><a target="_blank" href="https://github.com/joesyverson/specimina">github</a></li>
               <li><a href="mailto:contact@la-leg.com">contact@la-leg.com</a></li>
