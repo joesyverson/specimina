@@ -1,1 +1,3 @@
-console.log('Hello World!');
+import * as Mod from './module/mod.js';
+
+Mod.helloWorld();
