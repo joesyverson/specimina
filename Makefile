@@ -1,5 +1,5 @@
 SHELL:= /bin/bash
-.PHONY: build run
+.PHONY: help build del down rem re run start stop
 
 help:
 	@echo ""
@@ -7,6 +7,7 @@ help:
 	@echo "del"
 	@echo "down"
 	@echo "rem"
+	@echo "re"
 	@echo "run"
 	@echo "start"
 	@echo "stop"
@@ -23,6 +24,9 @@ down:
 
 rem:
 	docker rm specimina
+
+re:
+	docker restart specimina
 
 run:
 	docker run --name specimina -p 8080:80 -v .:/usr/share/nginx/html/ -d specimina

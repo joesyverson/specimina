@@ -1,6 +1,5 @@
-import { exhibit } from './module/script/exhibit.js';
-import { appendix } from './module/script/appendix.js';
-
+import { exhibit } from './module/conf/exhibit.js';
+import { appendix } from './module/conf/appendix.js';
 
 // VARS /////////////////////////////////////////////////////////
 
@@ -8,7 +7,7 @@ const protocol = 'http';
 const domain = 'localhost';
 const port = '8080';
 const hTMLResourcePath = 'module/html';
-const headings = { exhibit: 'exhibit', appendix: 'appendix'}
+// const headings = { exhibit: 'exhibit', appendix: 'appendix'}
 const baseURL = `${protocol}://${domain}:${port}`
 
 // FUNCT /////////////////////////////////////////////////////////
@@ -40,9 +39,9 @@ const hTMLWriter = (resourceTriad) => {
 // DOM ///////////////////////////////////////////////////////////
 
 const main = document.querySelector('main');
-
 const nav = document.querySelector('nav');
-const oLList = nav.querySelectorAll('ol');
+const navOLList = nav.querySelectorAll('ol');
+
 
 
 // LISTENERS ////////////////////////////////////////////////////
@@ -51,15 +50,20 @@ const oLList = nav.querySelectorAll('ol');
 
 // DO ///////////////////////////////////////////////////////////
 
-console.log(appendix.helloWorld());
+// console.log(exhibit.title,exhibit.helloWorld());
+// console.log(appendix.title,appendix.helloWorld());
+
+console.log(navOLList);
+
 
 // const heading = headings.appendix;
 // const resource = appendix.table;
 // hTMLLoader(baseURL,hTMLResourcePath,heading,resource);
-for (let oL of oLList ) {
-	let heading = oL.id.split('-')[0];
-	for (let lI of oL.children) {
-		let el = lI.firstChild.href.split('#')[1];
-		console.log(heading,el);
-	}	
-}
+
+// for (let oL of oLList ) {
+// 	let heading = oL.id.split('-')[0];
+// 	for (let lI of oL.children) {
+// 		let el = lI.firstChild.href.split('#')[1];
+// 		console.log(heading,el);
+// 	}	
+// }
