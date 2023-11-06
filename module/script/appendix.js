@@ -1,5 +1,5 @@
 const appendix = {
-  table: 'http://localhost:8080/module/html/appendix-table.html',
+  table: 'table.html',
   helloWorld: () => { return 'Hello, World!' }
 }
 

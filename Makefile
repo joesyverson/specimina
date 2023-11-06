@@ -8,6 +8,8 @@ help:
 	@echo "down"
 	@echo "rem"
 	@echo "run"
+	@echo "start"
+	@echo "stop"
 	@echo ""
 
 build:
@@ -24,4 +26,10 @@ rem:
 
 run:
 	docker run --name specimina -p 8080:80 -v .:/usr/share/nginx/html/ -d specimina
+
+start:
+	docker start specimina
+
+stop:
+	docker stop specimina
 
