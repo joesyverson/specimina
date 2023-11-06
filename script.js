@@ -7,33 +7,45 @@ const protocol = 'http';
 const domain = 'localhost';
 const port = '8080';
 const hTMLResourcePath = 'module/html';
-// const headings = { exhibit: 'exhibit', appendix: 'appendix'}
 const baseURL = `${protocol}://${domain}:${port}`
 
 // FUNCT /////////////////////////////////////////////////////////
 
-const hTMLLoader = async (baseURL,path,heading,resource) => {
-	const uRL = `${baseURL}/${path}/${heading}/${resource}`
+const componentLoader = async (evt) => {
+	const [ menuPath,id ] = evt.target.id.split('-');
+	const uRL = `${baseURL}/${hTMLResourcePath}/${menuPath}/${id}.html`;
 	console.log('INFO: try ',uRL);
 	try {	
 		const response = await fetch(uRL);
 		const hTML = await response.text();
-		const resourceTriad = [resource,hTML,heading];
-		hTMLWriter(resourceTriad)
-
+		const resourceTriad = [id,hTML,menuPath];
+		componentWriter(resourceTriad)
 		return resourceTriad;
 	} catch (err) {
 		console.log(err);
 	}
 }
 
-const hTMLWriter = (resourceTriad) => {
-	const [ resource,hTML,heading ] = resourceTriad;
-	console.log('INFO:','write',resource,' to ', heading);
-	if(heading === 'appendix') {
-		main.innerHTML = `<ol class="columnlist"><h2 class="uppercase offscreen">Appendix</h2>${hTML}</ol>`
-	}
+const componentWriter = (resourceTriad) => {
+	const [ id,hTML,menuPath ] = resourceTriad;
+	console.log('INFO:','write',id,' to ', menuPath);
+	main.innerHTML = `<ol class="columnlist"><h2 class="uppercase offscreen">${menuPath}</h2>${hTML}</ol>`
+	// if(menuPath === 'exhibit') {
+	// }
 	return resourceTriad;
+}
+
+const menuWriter = (menuType,menu,componentKey) => {
+	let newLi = document.createElement('li');
+	let newA = document.createElement('a');
+	let componentObject = menuType.components[componentKey];
+	let id = `${menuType.title}-${componentObject.id}`;
+	newA.id = id;
+	newA.innerText = componentObject.title;
+	newA.href = `index.html#${id}`;
+	newA.addEventListener('click',componentLoader,false);
+	newLi.append(newA);
+	menu.append(newLi);
 }
 
 // DOM ///////////////////////////////////////////////////////////
@@ -43,27 +55,20 @@ const nav = document.querySelector('nav');
 const navOLList = nav.querySelectorAll('ol');
 
 
-
-// LISTENERS ////////////////////////////////////////////////////
-
-
-
 // DO ///////////////////////////////////////////////////////////
 
-// console.log(exhibit.title,exhibit.helloWorld());
-// console.log(appendix.title,appendix.helloWorld());
+console.log(exhibit.title,exhibit.helloWorld());
+console.log(appendix.title,appendix.helloWorld());
 
-console.log(navOLList);
-
-
-// const heading = headings.appendix;
-// const resource = appendix.table;
-// hTMLLoader(baseURL,hTMLResourcePath,heading,resource);
-
-// for (let oL of oLList ) {
-// 	let heading = oL.id.split('-')[0];
-// 	for (let lI of oL.children) {
-// 		let el = lI.firstChild.href.split('#')[1];
-// 		console.log(heading,el);
-// 	}	
-// }
+for (let oL of navOLList ) {
+	let [ menu,responsivityRange ] = oL.id.split('-');
+	if ( menu === 'exhibit' ) {
+		for (let component in exhibit.components) {
+			menuWriter(exhibit,oL,component);
+		}
+	} else {
+		for (let component in appendix.components) {
+			menuWriter(appendix,oL,component);
+		}
+	}
+}

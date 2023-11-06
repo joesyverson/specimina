@@ -7,6 +7,12 @@ const appendix = {
       id: 'table-2',
       hTML: 'table.html'
     },
+    // menu: {
+    //   title: 'Menu',
+    //   subtitle: null,
+    //   id: null,
+    //   hTML: 'menu.html'
+    // }
   },
   helloWorld: () => { return 'Hello, World!' }
 }
