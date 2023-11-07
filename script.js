@@ -1,6 +1,6 @@
 import { exhibit } from './module/conf/exhibit.js';
 import { appendix } from './module/conf/appendix.js';
-import { conf } from './module/conf/conf-prod.js';
+import { conf } from './module/conf/conf-dev.js';
 
 console.log(exhibit.helloWorld());
 console.log(appendix.helloWorld());
@@ -14,6 +14,7 @@ class Engine {
 		this.appendix = appendix;
 	}
 
+	// just make the config module a class so these can actually be private
 	baseURL = (() => {
 		const protocol = conf.opts.protocol;
 		const domain = conf.opts.domain;
