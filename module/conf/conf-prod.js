@@ -2,7 +2,7 @@ const conf = {
   title: 'conf',
   opts: {
     protocol: 'https',
-    domain: 'joesyverson.github.io/specimina/',
+    domain: 'specimina.la-leg.com',
     port: '443',
     hTMLResourcePath: 'module/html'
   },
