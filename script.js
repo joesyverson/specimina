@@ -17,12 +17,12 @@ class Engine {
 		const domain = 'localhost';
 		const port = '8080';
 		const hTMLResourcePath = 'module/html';
-		return `${protocol}://${domain}:${port}/${hTMLResourcePath}`		
+		return `${protocol}://${domain}:${port}/${hTMLResourcePath}`;
 	})();
 
 	componentLoader = async (evt) => {
 		evt.preventDefault ? evt.preventDefault() : console.log('INIT','...');
-		const [ menuPath,id ] = evt.target.id.split('-');
+		const [menuPath,id] = evt.target.id.split('-');
 		const uRL = `${this.baseURL}/${menuPath}/${id}.html`;
 		
 		console.log('INFO:','try',uRL);
@@ -30,30 +30,34 @@ class Engine {
 			const response = await fetch(uRL);
 			const hTML = await response.text();
 			const resourceTriad = [id,hTML,menuPath];
-			this.componentWriter(resourceTriad)
+			this.componentWriter(resourceTriad);
 			
 			return resourceTriad;
 		} catch (err) {
 			console.log('ERRO:',err);
-
-			return err
+			let newLi = document.createElement('li');
+			newLi.innerHTML = 'If you\'re seeing this, the most recent request failed. Try again or <a href="mailto:contact@la-leg.com">contact</a>.';
+			mainOL.innerHTML = '';
+			mainOL.append(newLi);
+			mainH2.innerText = 'Request Failed';
+			return err;
 		}
 	}
 
 	componentWriter = (resourceTriad) => {
-		const [ id,hTML,menuPath ] = resourceTriad;
+		const [id,hTML,menuPath] = resourceTriad;
 		console.log('INFO:','write',id,'to', menuPath);
 		mainH2.innerText = menuPath;
 		mainOL.innerHTML= hTML;
-		main.prepend(mainH2)
+		main.prepend(mainH2);
 
 		return resourceTriad;
 	}
 
 	menuHandler = (navOLList) => {
 		for (let oL of navOLList ) {
-			oL.innerHTML = ''
-			let [ menu,responsivityRange ] = oL.id.split('-');
+			oL.innerHTML = '';
+			let [menu,responsivityRange] = oL.id.split('-');
 			if ( menu === 'exhibit' ) {
 				for (let component in this.exhibit.components) {
 					this.menuWriter(exhibit,oL,component);
@@ -80,7 +84,7 @@ class Engine {
 		newLi.append(newA);
 		menu.append(newLi);
 
-		return [menuType,menu,componentKey]
+		return [menuType,menu,componentKey];
 	}
 
 }
