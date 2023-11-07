@@ -19,6 +19,7 @@ build:
 	docker build -t specimina .
 
 conf:
+	@echo "CONFIGURE"
 	if grep 'conf-dev' ./script.js; then sed -i "+s+conf-dev.js+conf-prod.js+g" ./script.js; else sed -i "+s+conf-prod.js+conf-dev.js+g" ./script.js; fi
 
 del:
