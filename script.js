@@ -15,7 +15,7 @@ const componentLoader = async (evt) => {
 	evt.preventDefault();
 	const [ menuPath,id ] = evt.target.id.split('-');
 	const uRL = `${baseURL}/${hTMLResourcePath}/${menuPath}/${id}.html`;
-	console.log('INFO: try ',uRL);
+	console.log('INFO:','try',uRL);
 	try {	
 		const response = await fetch(uRL);
 		const hTML = await response.text();
@@ -29,7 +29,7 @@ const componentLoader = async (evt) => {
 
 const componentWriter = (resourceTriad) => {
 	const [ id,hTML,menuPath ] = resourceTriad;
-	console.log('INFO:','write',id,' to ', menuPath);
+	console.log('INFO:','write',id,'to', menuPath);
 	main.innerHTML = `<ol class="columnlist"><h2 class="uppercase offscreen">${menuPath}</h2>${hTML}</ol>`
 	return resourceTriad;
 }
@@ -53,11 +53,10 @@ const main = document.querySelector('main');
 const nav = document.querySelector('nav');
 const navOLList = nav.querySelectorAll('ol');
 
-
 // DO ///////////////////////////////////////////////////////////
 
-console.log(exhibit.title,exhibit.helloWorld());
-console.log(appendix.title,appendix.helloWorld());
+console.log(exhibit.helloWorld());
+console.log(appendix.helloWorld());
 
 for (let oL of navOLList ) {
 	let [ menu,responsivityRange ] = oL.id.split('-');

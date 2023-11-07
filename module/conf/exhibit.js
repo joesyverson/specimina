@@ -24,15 +24,9 @@ const exhibit = {
       subtitle: 'Article, Section, Paragraph & Aside',
       id: 'p',
       hTML: 'img.html'
-    },
-    // menu: {
-    //   title: 'Menu',
-    //   subtitle: null,
-    //   id: null,
-    //   hTML: 'menu.html'
-    // }
+    }
   },
-  helloWorld: () => { return 'Hello, World!' }
+  helloWorld: function() { return `HELLO: ${this.title}` }
 }
 
 export { exhibit };
