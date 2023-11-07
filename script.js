@@ -12,6 +12,7 @@ const baseURL = `${protocol}://${domain}:${port}`
 // FUNCT /////////////////////////////////////////////////////////
 
 const componentLoader = async (evt) => {
+	evt.preventDefault();
 	const [ menuPath,id ] = evt.target.id.split('-');
 	const uRL = `${baseURL}/${hTMLResourcePath}/${menuPath}/${id}.html`;
 	console.log('INFO: try ',uRL);
@@ -30,8 +31,6 @@ const componentWriter = (resourceTriad) => {
 	const [ id,hTML,menuPath ] = resourceTriad;
 	console.log('INFO:','write',id,' to ', menuPath);
 	main.innerHTML = `<ol class="columnlist"><h2 class="uppercase offscreen">${menuPath}</h2>${hTML}</ol>`
-	// if(menuPath === 'exhibit') {
-	// }
 	return resourceTriad;
 }
 
