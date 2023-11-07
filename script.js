@@ -1,6 +1,11 @@
 import { exhibit } from './module/conf/exhibit.js';
 import { appendix } from './module/conf/appendix.js';
 
+console.log(exhibit.helloWorld());
+console.log(appendix.helloWorld());
+
+// DEFINE ///////////////////////////////////////////////////////
+
 class Engine {
 	constructor(exhibit, appendix) {
 		this.exhibit = exhibit;
@@ -38,8 +43,29 @@ class Engine {
 	componentWriter = (resourceTriad) => {
 		const [ id,hTML,menuPath ] = resourceTriad;
 		console.log('INFO:','write',id,'to', menuPath);
-		main.innerHTML = `<ol class="columnlist"><h2 class="uppercase offscreen">${menuPath}</h2>${hTML}</ol>`
+		mainH2.innerText = menuPath;
+		mainOL.innerHTML= hTML;
+		main.prepend(mainH2)
+
 		return resourceTriad;
+	}
+
+	menuHandler = (navOLList) => {
+		for (let oL of navOLList ) {
+			oL.innerHTML = ''
+			let [ menu,responsivityRange ] = oL.id.split('-');
+			if ( menu === 'exhibit' ) {
+				for (let component in this.exhibit.components) {
+					this.menuWriter(exhibit,oL,component);
+				}
+			} else {
+				for (let component in this.appendix.components) {
+					this.menuWriter(appendix,oL,component);
+				}
+			}
+		}
+
+		return navOLList;
 	}
 
 	menuWriter = (menuType,menu,componentKey) => {
@@ -53,36 +79,21 @@ class Engine {
 		newA.addEventListener('click',this.componentLoader,false);
 		newLi.append(newA);
 		menu.append(newLi);
+
+		return [menuType,menu,componentKey]
 	}
 
 }
 
-
-// DOM ///////////////////////////////////////////////////////////
-
+const engine = new Engine(exhibit, appendix);
 const main = document.querySelector('main');
+const mainH2 = main.querySelector('h2');
+const mainOL = main.querySelector('ol');
 const nav = document.querySelector('nav');
 const navOLList = nav.querySelectorAll('ol');
+const mockEvent = {target: {id: 'exhibit-img'}};
 
 // DO ///////////////////////////////////////////////////////////
 
-console.log(exhibit.helloWorld());
-console.log(appendix.helloWorld());
-const engine = new Engine(exhibit, appendix);
-
-
-for (let oL of navOLList ) {
-	let [ menu,responsivityRange ] = oL.id.split('-');
-	if ( menu === 'exhibit' ) {
-		for (let component in engine.exhibit.components) {
-			engine.menuWriter(exhibit,oL,component);
-		}
-	} else {
-		for (let component in engine.appendix.components) {
-			engine.menuWriter(appendix,oL,component);
-		}
-	}
-}
-
-const mockEvent = {target: {id: 'exhibit-img'}};
+engine.menuHandler(navOLList);
 engine.componentLoader(mockEvent);
