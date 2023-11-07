@@ -1,22 +1,24 @@
 import { exhibit } from './module/conf/exhibit.js';
 import { appendix } from './module/conf/appendix.js';
+import { conf } from './module/conf/conf-prod.js';
 
 console.log(exhibit.helloWorld());
 console.log(appendix.helloWorld());
+console.log(conf.helloWorld());
 
 // DEFINE ///////////////////////////////////////////////////////
 
 class Engine {
-	constructor(exhibit, appendix) {
+	constructor(exhibit,appendix) {
 		this.exhibit = exhibit;
 		this.appendix = appendix;
 	}
 
 	baseURL = (() => {
-		const protocol = 'http';
-		const domain = 'localhost';
-		const port = '8080';
-		const hTMLResourcePath = 'module/html';
+		const protocol = conf.opts.protocol;
+		const domain = conf.opts.domain;
+		const port = conf.opts.port;
+		const hTMLResourcePath = conf.opts.hTMLResourcePath;
 		return `${protocol}://${domain}:${port}/${hTMLResourcePath}`;
 	})();
 

@@ -1,9 +1,10 @@
 SHELL:= /bin/bash
-.PHONY: help build del down rem re run start stop
+.PHONY: help build conf del down rem re run start stop
 
 help:
 	@echo ""
 	@echo "build"
+	@echo "conf"
 	@echo "del"
 	@echo "down"
 	@echo "rem"
@@ -16,6 +17,9 @@ help:
 build:
 	@echo "BUILD DEV IMAGE"
 	docker build -t specimina .
+
+conf:
+	if grep 'conf-dev' ./script.js; then sed -i "+s+conf-dev.js+conf-prod.js+g" ./script.js; else sed -i "+s+conf-prod.js+conf-dev.js+g" ./script.js; fi
 
 del:
 	@echo "REMOVE DEV IMAGE"
