@@ -29,7 +29,7 @@ class Engine {
 		
 		console.log('INFO:','try',uRL);
 		try {	
-			const response = await fetch(uRL);
+			const response = await fetch(uRL, {mode: 'same-origin'});
 			const hTML = await response.text();
 			const resourceTriad = [id,hTML,menuPath];
 			this.componentWriter(resourceTriad);
