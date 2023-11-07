@@ -12,7 +12,7 @@ const baseURL = `${protocol}://${domain}:${port}`
 // FUNCT /////////////////////////////////////////////////////////
 
 const componentLoader = async (evt) => {
-	evt.preventDefault();
+	evt.preventDefault ? evt.preventDefault() : console.log('INIT','...');
 	const [ menuPath,id ] = evt.target.id.split('-');
 	const uRL = `${baseURL}/${hTMLResourcePath}/${menuPath}/${id}.html`;
 	console.log('INFO:','try',uRL);
@@ -70,3 +70,6 @@ for (let oL of navOLList ) {
 		}
 	}
 }
+
+const mockEvent = {target: {id: 'exhibit-img'}};
+componentLoader(mockEvent);

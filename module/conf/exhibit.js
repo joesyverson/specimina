@@ -26,7 +26,7 @@ const exhibit = {
       hTML: 'img.html'
     }
   },
-  helloWorld: function() { return `HELLO: ${this.title}` }
+  helloWorld: function() { return `HELO: ${this.title}` }
 }
 
 export { exhibit };
