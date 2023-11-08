@@ -20,7 +20,7 @@ The website was initially conceived of as static -- just HTML and CSS. Java scri
 
 ### Diagram
 
-Diagram forthcoming.
+![image](./img/diagram.png)
 
 ### Tree
 

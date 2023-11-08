@@ -1,6 +1,6 @@
 import { exhibit } from './module/exhibit.js';
 import { appendix } from './module/appendix.js';
-import { conf } from './module/conf-dev.js';
+import { conf } from './module/conf-prod.js';
 
 console.log(exhibit.helloWorld());
 console.log(appendix.helloWorld());
