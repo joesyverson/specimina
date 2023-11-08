@@ -1,0 +1,166 @@
+<li class="lifted" id="form">
+  <h3 class="uppercase">Form & Fieldset</h3>
+  <form target="_blank" title="Form Sample" action="https://httpbin.org/post" method="POST">
+    <fieldset title="Personal Info">
+      <legend class="ital">Personal Info</legend>
+      
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="First Last" autocomplete="on" required />
+      </p>
+
+      <p>
+        <label for="tel">Phone:</label>
+        <input type="tel" name="tel" pattern="[0-9]{10}" placeholder="5555555555" required />
+      </p>
+
+    </fieldset>
+
+    <fieldset title="Situation">
+      <legend class="ital">Situation</legend>
+
+      <p>                
+        <label for="century">Century:</label>
+        <input type="number" name="century" min="2000" max="2900" step="100" value="2900"/>
+      </p>
+
+      <p>                
+        <label for="location">Location:</label>
+        <select name="location">
+          <optgroup label="Limbo">
+            <option value="africa">Africa</option>
+            <option value="antarctica">Antarctica</option>
+            <option value="eurasia">Eurasia</option>
+            <option value="americas">Americas</option>
+            <option value="australia">Australia</option>
+            <option value="limbotic">Other</option>
+          </optgroup>
+          <optgroup label="Purgatory">
+            <option value="luna">Luna</option>
+            <option value="mars">Mars</option>
+            <option value="titan">Titan</option>
+            <option value="terrestrial satellite">[synthetic terrestrial satellite]</option>
+            <option value="purgatorial">Other</option>
+          </optgroup>
+          <option value="hell">Hell</option>
+          <option value="paradise">Paradise</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <fieldset class="bisect" title="Ideology">
+      <legend class="ital">Ideology</legend>
+
+      <section> 
+        <p>                
+          <input type="radio" name="politics" value="authoritarian" required>
+          <label for="authoritarian">Authoritarian</label>
+        </p>                
+        <p>                
+          <input type="radio" name="economics" value="social" required>
+          <label for="social">Socialist</label>
+        </p>                
+        <p>                
+          <input type="radio" name="epistemology" value="postivist" required>
+          <label for="postivist">Postivist</label>
+        </p>
+      </section>
+
+      <section>
+        <p>
+          <input type="radio" name="politics" value="libertarian" required>
+          <label for="libertarian">Libertarian</label>
+        </p>
+        <p>
+          <input type="radio" name="economics" value="private" required>
+          <label for="private">Privatist</label>                  
+        </p>
+        <p>
+          <input type="radio" name="epistemology" value="skeptical" required>
+          <label for="skeptical">Skeptical</label>
+        </p>
+      <section>
+    </fieldset>
+
+    <fieldset title="Valid Schools">
+      <legend class="ital">Valid Schools</legend>
+
+        <ul class="bisect">
+          <li>
+            <span class="nowrap">                  
+              <input type="checkbox"  name="schools" value="neoplatonic"/>
+              <label for="neoplatonic">Neoplatonic</label>
+            </span>
+          </li>
+          <li>
+          <span class="nowrap">                  
+            <input type="checkbox" name="schools" value="thomist">
+            <label for="thomist">Thomist</label>
+          </span>
+        </li>
+          <li>
+          <span class="nowrap">                  
+            <input type="checkbox" name="schools" value="empircist">
+            <label for="empircist">Empiricist</label>
+          </span>
+        </li>
+          <li>
+          <span class="nowrap">                  
+            <input type="checkbox" name="schools" value="hegelian">
+            <label for="hegelian">Hegelian</label>
+          </span>
+        </li>
+          <li>
+          <span class="nowrap">                  
+            <input type="checkbox" name="schools" value="marxist">
+            <label for="marxist">Marxist</label>
+          </span>
+        </li>
+          <li>
+          <span class="nowrap">                  
+            <input type="checkbox" name="schools" value="existential">
+            <label for="existential">Existential</label>
+          </span>
+        </li>
+          <li>
+          <span class="nowrap">                  
+            <input type="checkbox" name="schools" value="feminist">
+            <label for="feminist">Feminist</label>
+          </span>
+        </li>
+        <li>
+          <span class="nowrap">                  
+            <input type="checkbox" name="schools" value="other">
+            <label for="other">Other</label>
+          </span>
+        </li>
+        </ul>           
+    </fieldset>
+
+    <fieldset title="Comment">
+      <legend class="ital">Comment</legend>
+      <label class="offscreen" for="comment">Comment:</label>
+      <textarea class="stretch" name="comment" rows="10" placeholder="If you specified Other for an of the fields, please make clear what the Other is. Also, feel free to send your critique about the quality and extent of this survey."></textarea>
+    </fieldset>
+    
+    <fieldset title="Submit">
+      <legend class="ital">Submit</legend>
+      <p>                
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="I don't recommend you enter your real email here" required />
+      </p>
+
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="I don't recommend you enter your real password here" required />
+      </p>
+    </fieldset>
+
+    <!-- <aside>The free service that is the target of this form can take a long time and will open in a new window.</aside> -->
+    <section class="form__button__submit">
+      <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+      <button type="reset">Reset</button>
+    </section>
+  </form>
+</li>

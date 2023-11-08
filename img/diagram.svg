@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10in"
+   height="7.5in"
+   viewBox="0 0 254 190.5"
+   version="1.1"
+   id="svg835"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview837"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="in"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-nodes="true"
+     inkscape:zoom="0.559375"
+     inkscape:cx="506.81564"
+     inkscape:cy="397.76536"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="true"
+     inkscape:bbox-nodes="false"
+     inkscape:object-nodes="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid29256"
+       spacingx="6.35"
+       spacingy="6.35"
+       empspacing="3"
+       units="in" />
+  </sodipodi:namedview>
+  <defs
+     id="defs832">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect144762"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect144440"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect144354"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect144063"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect143639"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect142736"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect149440"
+       width="340.2424"
+       height="272.4845"
+       x="-36.673248"
+       y="-40.934448" />
+    <g
+       id="g150913">
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ffffff;stroke:none;stroke-width:0.264583"
+         x="16.589415"
+         y="75.414604"
+         id="text45650"><tspan
+           sodipodi:role="line"
+           id="tspan45648"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ffffff;stroke:none;stroke-width:0.264583"
+           x="16.589415"
+           y="75.414604">Engine</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="56.7341"
+         y="17.248602"
+         id="text45650-8"><tspan
+           sodipodi:role="line"
+           id="tspan45648-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ffffff;stroke-width:0.264583"
+           x="56.7341"
+           y="17.248602">Module</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#00ff00;stroke-width:0.264583"
+         x="62.938049"
+         y="29.383451"
+         id="text60063"><tspan
+           sodipodi:role="line"
+           id="tspan60061"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#00ff00;stroke-width:0.264583"
+           x="62.938049"
+           y="29.383451">Component Family 1 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#5599ff;stroke-width:0.264583"
+         x="62.938049"
+         y="42.083454"
+         id="text62521"><tspan
+           sodipodi:role="line"
+           id="tspan62519"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#5599ff;stroke-width:0.264583"
+           x="62.938049"
+           y="42.083454">Component Family 2 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="62.938049"
+         y="54.777107"
+         id="text65675"><tspan
+           sodipodi:role="line"
+           id="tspan65673"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ffffff;stroke-width:0.264583"
+           x="62.938049"
+           y="54.777107">Config </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="56.588051"
+         y="98.280952"
+         id="text73267"><tspan
+           sodipodi:role="line"
+           id="tspan73265"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ffffff;stroke-width:0.264583"
+           x="56.588051"
+           y="98.280952">Component</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#00ff00;stroke-width:0.264583"
+         x="62.938049"
+         y="110.98095"
+         id="text73271"><tspan
+           sodipodi:role="line"
+           id="tspan73269"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#00ff00;stroke-width:0.264583"
+           x="62.938049"
+           y="110.98095">Component Family 1 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#b380ff;stroke-width:0.264583"
+         x="69.288055"
+         y="124.67155"
+         id="text79251"><tspan
+           sodipodi:role="line"
+           id="tspan79249"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#b380ff;stroke-width:0.264583"
+           x="69.288055"
+           y="124.67155">Component 1.1 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ff7f2a;stroke-width:0.264583"
+         x="69.142006"
+         y="137.44141"
+         id="text85130"><tspan
+           sodipodi:role="line"
+           id="tspan85128"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ff7f2a;stroke-width:0.264583"
+           x="69.142006"
+           y="137.44141">Component 1.2 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#5599ff;stroke-width:0.264583"
+         x="62.938049"
+         y="149.08095"
+         id="text89276"><tspan
+           sodipodi:role="line"
+           id="tspan89274"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#5599ff;stroke-width:0.264583"
+           x="62.938049"
+           y="149.08095">Component Family 2 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ff00cc;stroke-width:0.264583"
+         x="69.288055"
+         y="162.77156"
+         id="text89280"><tspan
+           sodipodi:role="line"
+           id="tspan89278"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ff00cc;stroke-width:0.264583"
+           x="69.288055"
+           y="162.77156">Component 2.1 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#00ccff;stroke-width:0.264583"
+         x="69.142006"
+         y="175.54141"
+         id="text89284"><tspan
+           sodipodi:role="line"
+           id="tspan89282"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#00ccff;stroke-width:0.264583"
+           x="69.142006"
+           y="175.54141">Component 2.2 </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="151.97139"
+         y="72.880951"
+         id="text106490"><tspan
+           sodipodi:role="line"
+           id="tspan106488"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ffffff;stroke-width:0.264583"
+           x="151.97139"
+           y="72.880951">DOM</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#00ff00;stroke-width:0.264583"
+         x="158.33409"
+         y="85.580956"
+         id="text110892"><tspan
+           sodipodi:role="line"
+           id="tspan110890"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#00ff00;stroke-width:0.264583"
+           x="158.33409"
+           y="85.580956">Menu 1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#b380ff;stroke-width:0.264583"
+         x="164.6841"
+         y="100.64315"
+         id="text115264"><tspan
+           sodipodi:role="line"
+           id="tspan115262"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#b380ff;stroke-width:0.264583"
+           x="164.6841"
+           y="100.64315">Item 1.1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ff7f2a;stroke-width:0.264583"
+         x="164.65234"
+         y="113.3114"
+         id="text117422"><tspan
+           sodipodi:role="line"
+           id="tspan117420"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ff7f2a;stroke-width:0.264583"
+           x="164.65234"
+           y="113.3114">Item 1.2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#5599ff;stroke-width:0.264583"
+         x="158.33409"
+         y="123.68095"
+         id="text119590"><tspan
+           sodipodi:role="line"
+           id="tspan119588"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#5599ff;stroke-width:0.264583"
+           x="158.33409"
+           y="123.68095">Menu 2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ff00cc;stroke-width:0.264583"
+         x="164.29039"
+         y="138.74315"
+         id="text119594"><tspan
+           sodipodi:role="line"
+           id="tspan119592"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ff00cc;stroke-width:0.264583"
+           x="164.29039"
+           y="138.74315">Item 2.1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#00ccff;stroke-width:0.264583"
+         x="164.29039"
+         y="151.44315"
+         id="text119598"><tspan
+           sodipodi:role="line"
+           id="tspan119596"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#00ccff;stroke-width:0.264583"
+           x="164.29039"
+           y="151.44315">Item 2.2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:'Pinyon Script';-inkscape-font-specification:'Pinyon Script';word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="158.33409"
+         y="164.14316"
+         id="text134130"><tspan
+           sodipodi:role="line"
+           id="tspan134128"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono';fill:#ffffff;stroke-width:0.264583"
+           x="158.33409"
+           y="164.14316">View (current component)</tspan></text>
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 56.842053,18.131252 V 56.231251"
+         id="path142303" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 56.842053,30.831252 h 6.35"
+         id="path142305" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 56.842053,43.531251 h 6.35"
+         id="path142307" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 56.842053,56.231251 h 6.35"
+         id="path142309" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 56.842053,100.68125 v 76.2"
+         id="path142311" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 56.842053,113.38125 h 6.35 v 25.4"
+         id="path142315" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 63.192053,126.08125 h 6.35"
+         id="path142317" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 63.192053,138.78125 h 6.35"
+         id="path142319" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 63.192053,151.48125 v 25.4 h 6.35"
+         id="path142321" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 63.192053,164.18125 h 6.35"
+         id="path142323" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 63.192053,151.48125 h -6.35"
+         id="path142325" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 152.09205,75.281252 v 88.899998 h 6.35"
+         id="path142454"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 152.09205,126.08125 h 6.35"
+         id="path142456" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 152.09205,87.981248 h 6.35"
+         id="path142458" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 37.792054,71.047919 56.84153,18.130075"
+         id="path142722"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 37.792054,75.281251 H 152.09205"
+         id="path142724" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 124.57538,111.26458 c 13.6262,-9.64878 21.86996,-26.44542 21.16667,-43.127078 -0.64383,-15.271383 -8.69243,-30.060685 -21.16667,-38.89375"
+         id="path142734"
+         inkscape:path-effect="#path-effect142736"
+         inkscape:original-d="m 124.57538,111.26458 c 3.175,-9.525 16.40417,-26.458328 21.16667,-43.127078 4.7625,-16.66875 1.05833,-38.89375 -21.16667,-38.89375"
+         sodipodi:nodetypes="csc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 124.8343,148.93781 c 13.85456,-15.20612 21.43419,-35.96463 20.6375,-56.520412 -0.71731,-18.507881 -8.16322,-36.682443 -20.6375,-50.373631"
+         id="path143635"
+         inkscape:path-effect="#path-effect143639"
+         inkscape:original-d="m 124.8343,148.93781 c 3.175,-12.45604 15.875,-34.72236 20.6375,-56.520412 4.7625,-21.798062 1.5875,-50.373631 -20.6375,-50.373631"
+         sodipodi:nodetypes="csc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 180.13788,85.864586 c 4.15814,-11.747044 3.03204,-25.255116 -3.01378,-36.151504 -4.94645,-8.915 -13.08014,-16.017827 -22.58016,-19.718378 -9.50003,-3.700552 -20.29511,-3.971055 -29.96856,-0.750952"
+         id="path144061"
+         inkscape:path-effect="#path-effect144063"
+         inkscape:original-d="m 180.13788,85.864586 c -8.46653,-9.524868 5.45288,-26.626504 -3.01378,-36.151504 -8.46667,-9.525 -44.08192,-10.944198 -52.54872,-20.46933"
+         sodipodi:nodetypes="csc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 180.66705,123.43542 c 10.75256,-5.78441 19.23393,-15.6678 23.31906,-27.173825 4.08512,-11.506025 3.73504,-24.524959 -0.96253,-35.794816 C 196.99916,46.013698 183.76667,34.7803 168.52733,31.182017 153.28798,27.583735 136.42837,31.71185 124.57538,41.943752"
+         id="path144436"
+         inkscape:path-effect="#path-effect144440"
+         inkscape:original-d="m 180.66705,123.43542 c -8.46653,-9.52487 30.82319,-53.443641 22.35653,-62.968641 -8.46667,-9.525 -69.9814,-8.997898 -78.4482,-18.523027"
+         sodipodi:nodetypes="csc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 113.99205,126.08125 48.68334,-25.92917"
+         id="path145094"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 113.99205,138.78125 48.68333,-25.4"
+         id="path145096"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 113.99205,164.18125 48.68333,-25.4"
+         id="path145098"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 113.99205,176.88125 48.68333,-25.4"
+         id="path145100"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 162.67538,100.15208 84.887886,56.231251"
+         id="path145102"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 162.67538,113.38125 84.887886,56.231251"
+         id="path145104"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 162.67538,138.78125 84.887886,56.231251"
+         id="path145106"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 162.67538,151.48125 84.887886,56.231251"
+         id="path145108"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>
